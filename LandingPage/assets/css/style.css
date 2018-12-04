@@ -15,6 +15,12 @@
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.promo-img {
-    width: 700px;
+.promo-text {
+    font-size: 18px;
+    border-left: solid #EDEDED 6px;
+    padding-left: 8px;
+}
+
+.promo-p {
+    font-size: 14px;
 }
