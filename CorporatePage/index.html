@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landing page</title>
 
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -17,9 +18,10 @@
     <![endif]-->
   </head>
   <body>
+    <!-- 
     <header>
       <div class="container">
-        <!-- row 1 -->
+        <!-- row 1 
         <div class="row">
           <div class="col-12">
             <div class="float-left">
@@ -37,6 +39,45 @@
         </div>
       </div>
     </header>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Teilus</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dropdown ml-2">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" 
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Customer area
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+
+    </nav>
 
     <section id="intro-header">
       <div class="container">
@@ -48,12 +89,33 @@
             <hr>
             <ul class="list-inline list-unstyled text-center">
               <li class="list-inline-item">
-                <a class="btn btn-default btn-lg" href="#" role="button">Sign in</a>
+                <a id="sign-btn" class="btn btn-default btn-lg" href="#" role="button">Sign in</a>
               </li>
               <li class="list-inline-item">
                   <a class="btn btn-primary btn-lg" href="#" role="button">Sign up</a>
               </li>
             </ul>
+            <div class="d-flex justify-content-center">
+              <form id="signin" class="form-inline text-center hidden-element">
+                <div class="form-group mr-1">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" class="form-control" id="signin-email" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group ml-1 mr-1">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">*</div>
+                      </div>
+                    <input type="password" class="form-control" id="signin-password" placeholder="Password">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default ml-1">Sign in</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -94,10 +156,11 @@
       </div>
     </section>
 
+    <!-- Old Features Section 
     <section id="features">
       <div class="container">
     
-        <!-- row 5 -->
+        <!-- row 5 
         <div class="row">
           <div class="col-sm-12">
             <h3 class="text-center">Features</h3>
@@ -105,7 +168,7 @@
           </div>
         </div>
     
-        <!-- row 6 -->
+        <!-- row 6 
         <div class="row">
           <div class="col-sm-2 col-md-4">
             <div class="feature">Feature</div>
@@ -129,6 +192,67 @@
         </div>
       </div>
     </section>
+    -->
+
+    <section id="features">
+        <div class="container">
+      
+          <!-- row 5 -->
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="text-center">Features</h3>
+              <p class="text-center">Features headline message</p>
+            </div>
+          </div>
+      
+          <!-- row 6 -->
+          <div class="row">
+            <div class="col-sm-2 col-md-4">
+              <div class="feature">
+                <!-- <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> -->
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span class="feature-tag">Product focus</span>
+              </div>
+            </div>
+            <div class="col-sm-2 col-md-4">
+              <div class="feature">
+                <!-- <span class="glyphicon glyphicon-education" aria-hidden="true"></span> -->
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                <span class="feature-tag">Teaching as a passion</span>
+              </div>
+            </div>
+            <div class="col-sm-2 col-md-4">
+              <div class="feature">
+                <!-- <span class="glyphicon glyphicon-send" aria-hidden="true"></span> -->
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <span class="feature-tag">Spreading knowledge</span>
+              </div>
+            </div>
+            <div class="col-sm-2 col-md-4">
+              <div class="feature">
+                <!-- <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> -->
+                <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                <span class="feature-tag">Save your day time</span>
+              </div>
+            </div>
+            <div class="col-sm-2 col-md-4">
+              <div class="feature">
+                <!-- <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> -->
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span class="feature-tag">Make it fancy</span>
+              </div>
+            </div>
+            <div class="col-sm-2 col-md-4">
+              <div class="feature">
+                <!-- <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> -->
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <span class="feature-tag">Made with love</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <section id="pricing">
       <div class="container">
@@ -206,6 +330,37 @@
       </div>
     </section>
 
+    <section id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <ul class="list-inline list-unstyled text-center d-flex justify-content-around">
+              <li class="list-inline-item">
+                <img src="assets/img/jon.png" class="rounded">
+                <h5 class="text-info">Jonny Doo</h5>
+                <p class="text-muted">CEO</p>
+              </li>
+              <li class="list-inline-item">
+                <img src="assets/img/jon.png" class="rounded-circle">
+                <h5 class="text-info">Jonny Doo</h5>
+                <p class="text-muted">CTO</p>
+              </li>
+              <li class="list-inline-item">
+                <img src="assets/img/jon.png" class="img-thumbnail">
+                <h5 class="text-info">Jonny Doo</h5>
+                <p class="text-muted">CIO</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <!--
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+    -->
+
     <section id="newsletter" class="text-center">
       <div class="container">
         <div class="row">
@@ -277,5 +432,6 @@
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
