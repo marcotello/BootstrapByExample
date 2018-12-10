@@ -7,6 +7,9 @@ body {
     border: 1px solid red;
 }
 
+.header {
+    background-color: #2F92CA;
+}
 nav form#search {
     padding: 0.5em;
 }
@@ -17,8 +20,19 @@ nav form#search {
   
 #nav-options img {
     max-height: 2.3em;
-    border-radius: 0.3em;
     cursor: pointer;
+    line-height: 1.42857143;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+#nav-options img:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
 }
 
 #tweet {
@@ -88,6 +102,7 @@ nav form#search {
 
 .card-photos {
     width: 261px;
+    margin-bottom: 10px;
 }
 
 .card-photos .card-header {
@@ -106,4 +121,27 @@ nav form#search {
 #profile-photo li {
     width: 45%;
     padding-left: 5px;
+}
+
+.card-breadcrumbs {
+    height: 40px;
+}
+
+.card-breadcrumbs > .card-body {
+    padding-top: 7px;
+    padding-left: 15px;
+    word-spacing: 5px;
+}
+
+.card-breadcrumbs > .breadcrumb-link {
+    font-size: 10px;
+    line-height: 1.42857143;
+}
+
+.card-tweet > .card-header {
+    background-color: #EBF4FB;
+}
+
+.btn-tweet {
+    border: 1px solid #ced4da; 
 }
