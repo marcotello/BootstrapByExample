@@ -105,7 +105,7 @@ nav form#search {
     margin-bottom: 10px;
 }
 
-.card-photos .card-header {
+.card-header {
     color: #4e5665;
     font-weight: bold;
 }
@@ -145,3 +145,75 @@ nav form#search {
 .btn-tweet {
     border: 1px solid #ced4da; 
 }
+
+.tweet-feed > img {
+    width: 68px;
+    height: 68px;
+}
+
+.tweet-feed-text > div > h5 {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.tweet-feed-text > div > h5 > small {
+    color: #777;
+}
+
+.tweet-feed-text > div > p {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.tweet-feed-text > .tweet-feed-icons {
+    font-size: 14px;
+    margin-left: 15px;
+}
+.tweet-feed-text > .tweet-feed-icons > a {
+    color: #337ab7;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+.tweet-feed-text > .tweet-feed-icons > a:hover, a:focus {
+    color: #23527c;
+    text-decoration: none;
+}
+
+.card-follow > div > ul > li > img {
+    width: 65px;
+    height: 65px;
+}
+
+.card-follow-text > div {
+    margin-left: 7px;
+}
+
+.card-follow-text > div > h5 {
+    font-size: 14px;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.btn-follow {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-follow > .fa-plus {
+    color: #337ab7;
+}
+
+.btn-follow:hover, .btn-follow:active {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.card-links {
+    font-size: 14px;
+}
+
